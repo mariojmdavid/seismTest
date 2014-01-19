@@ -31,7 +31,7 @@ int fileexists(const char* filename){
 }
 
 int main(int argc, char *argv[]) {
-	setvbuf(stdout, NULL, _IONBF, 0);
+	setvbuf(stdout, NULL, _IONBF, 0); // to solve bug in eclipse console on win8
 	setvbuf(stderr, NULL, _IONBF, 0);
 
     int option = 0;
